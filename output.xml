@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.5 on win32)" generated="2024-03-15T11:55:52.335574" rpa="false" schemaversion="5">
+<suite id="s1" name="Demo" source="C:\Users\chayanis.r\Robot\Demo.robot">
+<test id="s1-t1" name="Demo words generator" line="4">
+<kw name="Words" owner="FakerLibrary">
+<msg time="2024-03-15T11:55:53.510903" level="INFO">@{my words} = [ money | determine | us ]</msg>
+<var>@{my words}</var>
+<doc>Generate a tuple of words.</doc>
+<status status="PASS" start="2024-03-15T11:55:53.509905" elapsed="0.000998"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-15T11:55:53.511915" level="INFO">['money', 'determine', 'us']</msg>
+<arg>${my words}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-15T11:55:53.511915" elapsed="0.000000"/>
+</kw>
+<kw name="Email" owner="FakerLibrary">
+<msg time="2024-03-15T11:55:53.513902" level="INFO">${email} = ghaynes@example.com</msg>
+<var>${email}</var>
+<status status="PASS" start="2024-03-15T11:55:53.512975" elapsed="0.000927"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-15T11:55:53.514889" level="INFO">ghaynes@example.com</msg>
+<arg>${email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-15T11:55:53.514889" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-15T11:55:53.507322" elapsed="0.009353"/>
+</test>
+<status status="PASS" start="2024-03-15T11:55:52.339565" elapsed="1.179922"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
